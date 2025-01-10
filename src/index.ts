@@ -1,3 +1,2 @@
-export * from "./adapter.js";
-export * from "./adapterLoki.js";
-export * from "./useWmdbQuery.js";
+export * from "./createAdapter.js";
+export * from "./createAdapterLoki.js";

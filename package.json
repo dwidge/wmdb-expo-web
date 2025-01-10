@@ -1,6 +1,6 @@
 {
   "name": "@dwidge/wmdb-expo-web",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A WatermelonDB adapter for Expo Web applications.",
   "repository": "github:dwidge/wmdb-expo-web",
   "main": "./dist/cjs/index.js",
@@ -18,13 +18,12 @@
     "src"
   ],
   "scripts": {
-    "prepare": "rimraf dist && ncp assets/ dist/ && tsc && tsc --project tsconfig.esm.json",
-    "test": "node --test"
+    "prepare": "rimraf dist && ncp assets/ dist/ && tsc -b . tsconfig.cjs.json",
+    "test": "node --enable-source-maps --test --test-name-pattern"
   },
   "peerDependencies": {
     "@nozbe/watermelondb": "^0.27.1",
-    "expo-constants": "^16.0.2",
-    "react": "^18.3.1"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^22.5.4",
