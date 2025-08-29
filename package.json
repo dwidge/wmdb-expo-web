@@ -1,6 +1,6 @@
 {
   "name": "@dwidge/wmdb-expo-web",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A WatermelonDB adapter for Expo Web applications.",
   "repository": "github:dwidge/wmdb-expo-web",
   "main": "./dist/cjs/index.js",
